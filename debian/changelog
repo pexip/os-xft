@@ -1,3 +1,9 @@
+xft (2.2.0-3ubuntu2pexip1) pexip; urgency=low
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Wed, 25 Dec 2013 05:26:22 +0000
+
 xft (2.2.0-3ubuntu2) precise; urgency=low
 
   * No-change rebuild against current pkgbinarymangler to fix broken
