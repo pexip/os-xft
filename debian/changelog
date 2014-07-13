@@ -1,18 +1,22 @@
-xft (2.2.0-3ubuntu2) precise; urgency=low
+xft (2.3.2-1) unstable; urgency=medium
 
-  * No-change rebuild against current pkgbinarymangler to fix broken
-    md5sums. (see LP #875466)
+  * New upstream release.
+  * Rewrite debian/rules using dh, bump compat level to 9, drop xsfbs.
 
- -- Martin Pitt <martin.pitt@ubuntu.com>  Wed, 29 Feb 2012 18:00:42 +0100
+ -- Julien Cristau <jcristau@debian.org>  Sun, 13 Jul 2014 10:49:43 +0200
 
-xft (2.2.0-3ubuntu1) oneiric; urgency=low
+xft (2.3.1-2) unstable; urgency=medium
 
-  * Merge from Debian unstable, remaining changes:
-    - Add patch 100-libXft-2.1.10-lcd-filter-3, use new FreeType LCD colour
-      filtering features, with additional modification that the specific LCD
-      Filter can be changed.
+  * Fix FTBFS with freetype 2.5.1 (closes: #733385).
 
- -- Steve Langasek <steve.langasek@ubuntu.com>  Mon, 13 Jun 2011 15:59:33 +0000
+ -- Julien Cristau <jcristau@debian.org>  Sat, 18 Jan 2014 20:14:05 +0100
+
+xft (2.3.1-1) unstable; urgency=low
+
+  * New upstream release:
+    - Subpixel LCD text rendering improvements (Closes: #641197).
+
+ -- Cyril Brulebois <kibi@debian.org>  Sat, 16 Jun 2012 22:04:44 +0200
 
 xft (2.2.0-3) unstable; urgency=low
 
@@ -26,21 +30,6 @@ xft (2.2.0-3) unstable; urgency=low
   * Bump Standards-Version to 3.9.2.
 
  -- Julien Cristau <jcristau@debian.org>  Sun, 12 Jun 2011 16:30:44 +0200
-
-xft (2.2.0-2ubuntu2) natty; urgency=low
-
-  * FFe LP: #733501: build for multiarch.
-
- -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 23 Mar 2011 15:37:11 -0700
-
-xft (2.2.0-2ubuntu1) natty; urgency=low
-
-  * Merge from debian unstable (LP: #717285), remaining changes:
-    - Add patch 100-libXft-2.1.10-lcd-filter-3, use new FreeType LCD colour
-      filtering features, with additional modification that the specific LCD
-      Filter can be changed.
-
- -- Lorenzo De Liso <blackz@ubuntu.com>  Sat, 12 Feb 2011 15:51:34 +0100
 
 xft (2.2.0-2) unstable; urgency=low
 
@@ -64,15 +53,6 @@ xft (2.2.0-1) experimental; urgency=low
 
  -- Cyril Brulebois <kibi@debian.org>  Fri, 14 Jan 2011 05:09:29 +0100
 
-xft (2.1.14-2ubuntu1) maverick; urgency=low
-
-  * Merge from Debian, remaining changes:
-    - Add patch 100-libXft-2.1.10-lcd-filter-3, use new FreeType LCD colour
-      filtering features, with additional modification that the specific LCD
-      Filter can be changed; LP #305399.
-
- -- Loïc Minier <loic.minier@ubuntu.com>  Sun, 06 Jun 2010 15:41:54 +0200
-
 xft (2.1.14-2) unstable; urgency=low
 
   [ Julien Cristau ]
@@ -92,18 +72,6 @@ xft (2.1.14-2) unstable; urgency=low
 
  -- Cyril Brulebois <kibi@debian.org>  Thu, 11 Mar 2010 02:33:50 +0100
 
-xft (2.1.14-1ubuntu1) lucid; urgency=low
-
-  * Merge from Debian unstable, remaining chnages:
-    - patches/100-libXft-2.1.10-lcd-filter-3.patch:
-      + Use new FreeType LCD colour filtering features, with additional
-        modification that the specific LCD Filter can be changed
-        (LP: #305399).
-  * Renumbered the patch to follow our unwritten policy.
-  * Drop patch 002_embeddedbitmap_property.patch, included upstream.
-
- -- Timo Aaltonen <tjaalton@ubuntu.com>  Fri, 04 Dec 2009 16:02:38 +0200
-
 xft (2.1.14-1) unstable; urgency=low
 
   [ Timo Aaltonen ]
@@ -116,35 +84,11 @@ xft (2.1.14-1) unstable; urgency=low
 
  -- Julien Cristau <jcristau@debian.org>  Thu, 03 Dec 2009 14:40:25 +0100
 
-xft (2.1.13-3ubuntu1) jaunty; urgency=low
-
-  * Merge from debian unstable, remaining changes:
-    - debian/patches/002_embeddedbitmap_property.patch:
-      + Allow "embeddedbitmap" property in fontconfig.
-    - debian/patches/libXft-2.1.10-lcd-filter-3.patch:
-      + Use new FreeType LCD colour filtering features, with additional
-        modification that the specific LCD Filter can be changed
-        (LP: #305399).
-
- -- Bryce Harrington <bryce@ubuntu.com>  Thu, 26 Feb 2009 13:40:39 -0800
-
 xft (2.1.13-3) unstable; urgency=low
 
   * Upload to unstable.
 
  -- Julien Cristau <jcristau@debian.org>  Sun, 15 Feb 2009 22:07:06 +0100
-
-xft (2.1.13-2ubuntu1) jaunty; urgency=low
-
-  * Merge from debian unstable, remaining changes:
-    - debian/patches/002_embeddedbitmap_property.patch:
-      + Allow "embeddedbitmap" property in fontconfig.
-    - debian/patches/libXft-2.1.10-lcd-filter-3.patch:
-      + Use new FreeType LCD colour filtering features, with additional
-        modification that the specific LCD Filter can be changed
-        (LP: #305399).
-
- -- Anders Kaseorg <andersk@mit.edu>  Mon, 22 Dec 2008 00:50:15 -0500
 
 xft (2.1.13-2) experimental; urgency=low
 
@@ -166,25 +110,6 @@ xft (2.1.13-1) experimental; urgency=low
 
  -- Julien Cristau <jcristau@debian.org>  Sat, 19 Jul 2008 16:30:18 +0200
 
-xft (2.1.12-3ubuntu2) jaunty; urgency=low
-
-  * Fix build failure with new fontconfig, integrating the lcd-filter patch.
-
- -- Matthias Klose <doko@ubuntu.com>  Tue, 18 Nov 2008 07:13:02 +0100
-
-xft (2.1.12-3ubuntu1) intrepid; urgency=low
-
-  * Merge from debian unstable, remaining changes:
-    - debian/patches/002_embeddedbitmap_property.patch:
-      + Allow "embeddedbitmap" property in fontconfig. (LP: 208745)
-    - debian/patches/libXft-2.1.10-lcd-filter-3.patch:
-      + Use new FreeType LCD colour filtering features, with additional
-        modification that the specific LCD Filter can be changed.
-    - Specify minimum versions for some depends
-    - Update maintainer field to Ubuntu
-
- -- Bryce Harrington <bryce@ubuntu.com>  Tue, 17 Jun 2008 00:59:28 -0700
-
 xft (2.1.12-3) unstable; urgency=low
 
   * Remove Branden from Uploaders with his permission.
@@ -201,48 +126,6 @@ xft (2.1.12-3) unstable; urgency=low
     git; closes: #462262).
 
  -- Julien Cristau <jcristau@debian.org>  Tue, 10 Jun 2008 16:12:37 +0200
-
-xft (2.1.12-2ubuntu5) hardy; urgency=low
-
-  [Liu Qishuai]
-  * debian/patches/002_embeddedbitmap_property.patch:
-    - Allow "embeddedbitmap" property in fontconfig. (LP: #208745)
-  * debian/changelog:
-    - Update to Ubuntu maintainer
-
- -- Bryce Harrington <bryce@ubuntu.com>  Wed, 09 Apr 2008 14:12:59 -0700
-
-xft (2.1.12-2ubuntu4) gutsy; urgency=low
-
-  * debian/patches/libXft-2.1.10-lcd-filter-3.patch:
-    - Restore patch that uses new FreeType LCD colour filtering features,
-      with additional modification that the specific LCD Filter can be
-      changed.
-
- -- Scott James Remnant <scott@ubuntu.com>  Thu, 20 Sep 2007 20:09:10 +0100
-
-xft (2.1.12-2ubuntu3) gutsy; urgency=low
-
-  * debian/patches/series
-    - remove mention of libXft-2.1.10-lcd-filter-2.patch
-
- -- Matthew Garrett <mjg59@srcf.ucam.org>  Thu, 20 Sep 2007 15:48:21 +0100
-
-xft (2.1.12-2ubuntu2) gutsy; urgency=low
-
-  * debian/patches/libXft-2.1.10-lcd-filter-2.patch:
-    - remove - results in incorrect rendering, and we have the bytecode
-      interpreter enabled anyway
-
- -- Matthew Garrett <mjg59@srcf.ucam.org>  Thu, 20 Sep 2007 05:08:05 +0100
-
-xft (2.1.12-2ubuntu1) gutsy; urgency=low
-
-  [ Matti Lindell ]
-  * debian/patches/libXft-2.1.10-lcd-filter-2.patch:
-    - use new built-in FreeType LCD color filtering features
-
- -- Scott James Remnant <scott@ubuntu.com>  Tue, 18 Sep 2007 17:39:18 +0100
 
 xft (2.1.12-2) unstable; urgency=low
 
@@ -331,6 +214,7 @@ xft (2.1.8.2-4) unstable; urgency=low
     package. (closes: #358254, #358260, #350298, #358308)
 
  -- David Nusinow <dnusinow@debian.org>  Wed, 22 Mar 2006 00:06:39 -0500
+
 
 xft (2.1.8.2-3) unstable; urgency=low
 
@@ -786,4 +670,3 @@ xft2 (2.0-1) unstable; urgency=low
  -- Colin Walters <walters@debian.org>  Sun, 13 Oct 2002 14:43:56 -0400
 
 vim:set ai tw=78 et sw=2 sts=2:
-
