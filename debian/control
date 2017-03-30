@@ -19,7 +19,7 @@ Build-Depends:
 Standards-Version: 3.9.2
 Vcs-Git: git://git.debian.org/git/pkg-xorg/lib/xft
 Vcs-Browser: http://git.debian.org/?p=pkg-xorg/lib/xft.git
-XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ jessie
 
 Package: libxft2
 Section: libs
