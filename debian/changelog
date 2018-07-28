@@ -1,3 +1,9 @@
+xft (2.3.2-1pexip2) pexip; urgency=low
+
+  * Migrate to Stretch
+
+ -- John-Mark Bell <jmb@pexip.com>  Sun, 29 Jul 2018 00:25:43 +0100
+
 xft (2.3.2-1pexip1) pexip; urgency=low
 
   * Migrate to Jessie
